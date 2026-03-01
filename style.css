@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background-color: #2874f0;
+    color: white;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.search-box {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.cart-btn {
+    background: white;
+    color: #2874f0;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px 50px;
+    background-color: #f1f3f6;
+}
+
+/* PRODUCT CARD */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-4px);
+}
+
+.card img {
+    height: 180px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: #fb641b;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #e85a14;
+}
+
+/* CART PANEL */
+.cart-box {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    padding: 8px;
+    border-radius: 6px;
+    background: #f9f9f9;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.cart-details {
+    flex: 1;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+}
+
+.qty-btn {
+    padding: 4px 8px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.subtotal {
+    font-weight: bold;
+    color: #b12704;
+}
